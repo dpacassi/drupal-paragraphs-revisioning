@@ -1,0 +1,14 @@
+uuid: 28f97c33-931c-47a3-8282-904eea9d2458
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - david@eps-labs.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
