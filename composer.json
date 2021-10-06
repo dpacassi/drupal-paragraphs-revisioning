@@ -26,6 +26,7 @@
         "drupal/entity_reference_revisions": "1.9",
         "drupal/gin": "3.*",
         "drupal/paragraphs": "1.12",
+        "drupal/taxonomy_term_revision": "1.*",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
