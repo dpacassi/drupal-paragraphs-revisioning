@@ -1,0 +1,33 @@
+uuid: 2f3cef16-2af0-471d-9193-98b59b764085
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.infocenters.field_attachments
+    - taxonomy.vocabulary.infocenters
+  module:
+    - entity_reference_revisions
+    - text
+id: taxonomy_term.infocenters.default
+targetEntityType: taxonomy_term
+bundle: infocenters
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_attachments:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

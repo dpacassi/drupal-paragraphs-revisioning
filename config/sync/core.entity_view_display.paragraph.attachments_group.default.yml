@@ -1,0 +1,42 @@
+uuid: c66d3d31-ed3b-4133-a0f5-b6d8268609da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.attachments_group.field_display_status
+    - field.field.paragraph.attachments_group.field_label
+    - field.field.paragraph.attachments_group.field_type_of_attachment
+    - paragraphs.paragraphs_type.attachments_group
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.attachments_group.default
+targetEntityType: paragraph
+bundle: attachments_group
+mode: default
+content:
+  field_display_status:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_label:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_type_of_attachment:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

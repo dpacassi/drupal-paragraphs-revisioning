@@ -1,0 +1,45 @@
+uuid: d4579a13-307d-43c7-b859-8ad74b4285b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.attachments_group.field_display_status
+    - field.field.paragraph.attachments_group.field_label
+    - field.field.paragraph.attachments_group.field_type_of_attachment
+    - paragraphs.paragraphs_type.attachments_group
+  module:
+    - paragraphs
+id: paragraph.attachments_group.default
+targetEntityType: paragraph
+bundle: attachments_group
+mode: default
+content:
+  field_display_status:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_label:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type_of_attachment:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

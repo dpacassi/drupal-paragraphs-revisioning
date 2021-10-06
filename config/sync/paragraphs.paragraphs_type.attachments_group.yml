@@ -1,0 +1,10 @@
+uuid: 95b2be3f-570e-471b-8896-d0c7108e1c05
+langcode: en
+status: true
+dependencies: {  }
+id: attachments_group
+label: 'Attachments Group'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

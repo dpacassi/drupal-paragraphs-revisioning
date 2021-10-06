@@ -1,0 +1,19 @@
+uuid: bac8a84e-abac-4435-8aa9-db65601f52bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.attachment_item
+id: paragraph.attachment_item.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: attachment_item
+label: Label
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

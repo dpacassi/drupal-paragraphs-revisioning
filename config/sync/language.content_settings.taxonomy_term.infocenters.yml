@@ -1,0 +1,11 @@
+uuid: fd651b6b-c4e7-4f0a-8f1a-76dc72b5b3dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.infocenters
+id: taxonomy_term.infocenters
+target_entity_type_id: taxonomy_term
+target_bundle: infocenters
+default_langcode: site_default
+language_alterable: false
