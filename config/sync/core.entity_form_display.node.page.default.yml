@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_attachments
     - node.type.page
   module:
+    - entity_reference_revisions
     - path
     - text
 _core:
@@ -31,6 +33,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_attachments:
+    weight: 121
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2
