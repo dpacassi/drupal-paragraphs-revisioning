@@ -5,5 +5,17 @@ config:
   php: '7.4'
   composer_version: '1.10.22'
   xdebug: false
-  database: postgres:13
-
+  database: 'mariadb:10.5'
+services:
+  database:
+    type: 'mariadb:10.5'
+    portforward: 33061
+    creds:
+      user: drupal8
+      password: drupal8
+  database2:
+    type: 'mariadb:10.5'
+    portforward: 33062
+    creds:
+      user: drupal8
+      password: drupal8

@@ -797,12 +797,13 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 $settings['config_sync_directory'] = '../config/sync';
 $databases['default']['default'] = array (
-  'database' => getenv('PSQL_DATABASE'),
-  'username' => getenv('PSQL_USER'),
-  'password' => getenv('PSQL_PASSWORD'),
+  'database' => getenv('MYSQL_DATABASE'),
+  'username' => getenv('MYSQL_USER'),
+  'password' => getenv('MYSQL_PASSWORD'),
   'prefix' => '',
-  'host' => getenv('PSQL_HOSTNAME'),
-  'port' => getenv('PSQL_PORT'),
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\pgsql',
-  'driver' => 'pgsql',
+  'host' => getenv('MYSQL_HOSTNAME'),
+  'port' => getenv('MYSQL_PORT'),
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+  'collation' => 'utf8mb4_unicode_ci',
 );
